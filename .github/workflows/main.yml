@@ -130,7 +130,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Copy docker-compose.yml via ssh
-        uses: appleboy/ssh-action@v1.6.10
+        uses: appleboy/ssh-action@vmaster
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
